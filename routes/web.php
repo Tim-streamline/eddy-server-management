@@ -64,7 +64,7 @@ $authMiddleware = [
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
-    VerifySubscriptionStatus::class,
+    //VerifySubscriptionStatus::class,
 ];
 
 Route::middleware($authMiddleware)->group(function () {
